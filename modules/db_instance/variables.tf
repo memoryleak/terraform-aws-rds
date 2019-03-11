@@ -213,3 +213,13 @@ variable "deletion_protection" {
   description = "The database can't be deleted when this value is set to true."
   default     = false
 }
+
+variable "performance_insights_enabled" {
+  description = "Specifies whether Performance Insights is enabled or not"
+  default = false
+}
+
+variable "performance_insights_kms_key_id" {
+  description = "The ARN for the KMS key to encrypt Performance Insights data"
+  default = ""
+}
